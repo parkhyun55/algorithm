@@ -1,6 +1,5 @@
 N, M = list(map(int, input().split()))
 A = []
-temp = []
 
 for i in range(N):
     A.append(i + 1)
