@@ -1,3 +1,3 @@
-year_b = int(input())
-year_A = year_b - 544 + 1
-print(year_A)
+y = int(input())
+x = 2541 - 1998
+print(y - x)
