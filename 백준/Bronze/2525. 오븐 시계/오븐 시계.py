@@ -1,16 +1,10 @@
-hour, min = input().split()
-hour = int(hour)
-min = int(min)
+hours, min = map(int, input().split())
 need_time = int(input())
-hour_plus = (min + need_time) // 60
-
-if hour_plus == 0:
-    min = min + need_time
+if (min + need_time) // 60 > 0:
+    hours = hours + (min + need_time) // 60
+    min = (min + need_time) % 60
 else:
-    hour = hour + hour_plus
-    min = min + need_time - 60 * hour_plus
-
-if hour >= 24:
-    hour = hour - 24
-
-print(hour, min)
+    min = min + need_time
+if hours >= 24:
+    hours = hours - 24
+print(hours, min)
