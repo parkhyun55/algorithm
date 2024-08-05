@@ -1,14 +1,11 @@
-hour, min = input().split()
-hour = int(hour)
-min = int(min)
-
+hours, min = map(int, input().split())
 if min < 45:
-    if hour == 0:
-        hour = hour + 23
-        min = min + 60
-    else:
-        hour = hour - 1
-        min = min + 60
-
-min = min - 45
-print(hour, min)
+    if hours == 0:
+        hours = hours + 23
+        min = min + 15
+    else :
+        hours = hours - 1
+        min = min + 15
+else:
+    min = min - 45
+print(hours, min)
