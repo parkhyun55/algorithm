@@ -1,9 +1,4 @@
 N = int(input())
-long = N // 4
-result = ''
-
-for i in range(long):
-    result += 'long '
-
-result += 'int'
-print(result)
+for i in range(N // 4):
+    print("long ", end="")
+print("int")
