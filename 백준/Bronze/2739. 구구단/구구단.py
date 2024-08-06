@@ -1,4 +1,3 @@
-a = int(float(input()))
-
-for i in range(1, 10, 1):
-    print(a, '*', i, '=', a*i)
+N = int(input())
+for i in range(1, 10):
+    print(str(N) + " * " + str(i) + " = " + str(N * i))
