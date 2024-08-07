@@ -1,6 +1,8 @@
 N = int(input())
-a = map(int, input().split())
-a = list(a)
-b = int(input())
-
-print(a.count(b))
+cnt = 0
+list = input().split(" ")
+v = int(input())
+for i in list:
+    if int(i) == v:
+        cnt = cnt + 1
+print(cnt)
