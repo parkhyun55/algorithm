@@ -1,14 +1,12 @@
 N, M = map(int, input().split())
-A = []
+list = [0] * N
+tmp = 0
 for i in range(N):
-    A.append(i + 1)
-temp = 0
-
+    list[i] = i + 1
 for i in range(M):
     a, b = map(int, input().split())
-    temp = A[a - 1]
-    A[a - 1] = A[b - 1]
-    A[b - 1] = temp
-
-for i in A:
-    print(i, end = ' ')
+    tmp = list[a - 1]
+    list[a - 1] = list[b - 1]
+    list[b - 1] = tmp
+for i in list:
+    print(i, end=" ")
