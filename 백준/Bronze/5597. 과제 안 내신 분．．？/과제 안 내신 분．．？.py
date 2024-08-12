@@ -1,13 +1,7 @@
-A = []
-result = []
-
+list = [0] * 30
 for i in range(28):
-    a = int(input())
-    A.append(a)
-
-for i in range(1, 31):
-    if i not in A:
-        result.append(i)
-
-print(result[0])
-print(result[1])
+    n = int(input())
+    list[n - 1] = 1
+for i in range(30):
+    if list[i] == 0:
+        print(i + 1)
