@@ -1,11 +1,12 @@
 N = int(input())
-score = []
-sum = 0
-
-a = list(map(int, input().split()))
+score = input().split()
 
 for i in range(N):
-    score.append(a[i] / max(a) * 100)
-    sum += score[i]
+    score[i] = int(score[i])
 
+M = max(score)
+sum = 0
+
+for i in range(N):
+    sum = sum + score[i] * 100 / M
 print(sum / N)
