@@ -1,2 +1,2 @@
-s = input()
-print(ord(s))
+c = str(input())
+print(ord(c))
