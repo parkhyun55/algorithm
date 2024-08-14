@@ -1,8 +1,8 @@
-s = input()
-c = 'abcdefghijklmnopqrstuvwxyz'
+S = str(input())
+alpha = 'abcdefghijklmnopqrstuvwxyz'
 
-for i in c:
-    if i in s:
-        print(s.index(i), end=" ")
+for i in alpha:
+    if i in S:
+        print(S.index(i), end=" ")
     else:
-        print(-1, end=" ")
+        print("-1", end=" ")
