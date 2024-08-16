@@ -1,6 +1,6 @@
 while True:
     try:
-        s = input()
+        s = str(input())
         print(s)
-    except EOFError:
+    except:
         break
