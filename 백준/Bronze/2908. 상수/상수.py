@@ -1,8 +1,8 @@
-a, b = input().split()
-a = int(a[::-1])
-b = int(b[::-1])
+A, B = map(str, input().split())
+A = A[::-1]
+B = B[::-1]
 
-if a > b:
-    print(a)
+if A > B:
+    print(A)
 else:
-    print(b)
+    print(B)
