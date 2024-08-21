@@ -1,12 +1,16 @@
-s = input().upper()
-s_list = list(set(s))
-cnt_list = []
+words = str(input()).upper()
+words_ = list(set(words))
+cnt = []
+max_cnt = 0
 
-for i in s_list:
-    cnt = s.count(i)
-    cnt_list.append(cnt)
+for i in words_:
+    cnt.append(words.count(i))
 
-if cnt_list.count(max(cnt_list)) > 1:
-    print('?')
+for i in cnt:
+    if i > max_cnt:
+        max_cnt = i
+
+if cnt.count(max_cnt) > 1:
+    print("?")
 else:
-    print(s_list[(cnt_list.index(max(cnt_list)))])
+    print(words_[cnt.index(max_cnt)])
