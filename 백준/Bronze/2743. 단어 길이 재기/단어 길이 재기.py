@@ -1,2 +1,2 @@
-s = input()
+s = str(input())
 print(len(s))
